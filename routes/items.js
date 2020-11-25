@@ -25,7 +25,7 @@ router.get('/query', (req, res) => {
                 message: `Read items count fail ${err.message}`
             })
         }
-        ItemModel.find({}, {_id: 0, __v: 0}, (err, items) => {
+        ItemModel.find({}, {__v: 0}, (err, items) => {
             if (err) {
                 return res.status(200).json({
                     err_code: 5,
@@ -37,7 +37,7 @@ router.get('/query', (req, res) => {
                 itemsCount: count,
                 items: items
             })
-        }).skip((intCurrentPageCount - 1) * 10).limit(10);
+        }).skip(((intCurrentPageCount === 0 ? 1 : intCurrentPageCount) - 1) * 10).limit(intCurrentPageCount === 0 ? 0 : 10);
     });
 })
 
@@ -65,5 +65,45 @@ router.get('/insert', function (req, res, next) {
         })
     })
 });
+
+// amount: 87
+// brand: "brand 1"
+// name: "product 1"
+// price: 120
+// type: "products"
+// _id: "5f9525e01169084cb2567370"
+
+router.get('/update', (req, res) => {
+    const {amount, brand, name, price, type, _id} = req.query
+    ItemModel.findByIdAndUpdate({_id: _id}, {amount, brand, name, price, type}, {}, (err, item) => {
+        if (err) {
+            return res.status(200).json({
+                err_code: 0,
+                message: err.message
+            })
+        }
+        return res.status(200).json({
+            err_code: 0,
+            item
+        })
+    });
+})
+
+router.get('/delete', (req, res) => {
+    let {_id} = req.query
+    _id = _id.split(",")
+    ItemModel.deleteOne({_id: {$in: _id}}, (err, item) => {
+        if (err) {
+            return res.status(200).json({
+                err_code: 1,
+                message: err.message
+            })
+        }
+        return res.status(200).json({
+            err_code: 0,
+            item
+        })
+    });
+})
 
 module.exports = router;

@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-const {CustomerModel} = require('../db/db_models')
+const {CustomerModel, CarModel} = require('../db/db_models')
 
 router.get('/query', (req, res) => {
     const {currentPageCount} = req.query
@@ -37,12 +37,12 @@ router.get('/query', (req, res) => {
                 customersCount: count,
                 customers: customers
             })
-        }).skip((intCurrentPageCount - 1) * 10).limit(10);
+        }).skip(((intCurrentPageCount === 0 ? 1 : intCurrentPageCount) - 1) * 10).limit(intCurrentPageCount === 0 ? 0 : 10);
     });
 })
 
 /* GET users listing. */
-router.get('/insert', function(req, res, next) {
+router.get('/insert', function (req, res, next) {
     const {name, phone, email} = req.query
     CustomerModel({
         name: name,
@@ -50,21 +50,83 @@ router.get('/insert', function(req, res, next) {
         email: email
     }).save((err, customer) => {
         if (err) {
-            return res.status(500).json({
-                err_code: 500,
-                data: {
-                    message: err.message
-                }
+            return res.status(200).json({
+                err_code: 1,
+                message: err.message
             })
         }
         // res.cookie('userid',user._id,{maxAge:1000*60*60*24})
         return res.status(200).json({
             err_code: 0,
-            data: {
-                customer
-            }
+            customer
         })
     });
 });
 
+router.get('/update', (req, res) => {
+    let {_id, name, phone, email} = req.query
+    CustomerModel.findByIdAndUpdate({_id: _id}, {name, phone, email}, {}, (err, customer) => {
+        if (err) {
+            return res.status(200).json({
+                err_code: 0,
+                message: err.message
+            })
+        }
+        return res.status(200).json({
+            err_code: 0,
+            customer
+        })
+    });
+})
+
+router.get('/delete', (req, res) => {
+    let {_id} = req.query
+    _id = _id.split(",")
+    CustomerModel.deleteOne({_id: {$in: _id}}, (err, customer) => {
+        if (err) {
+            return res.status(200).json({
+                err_code: 1,
+                message: err.message
+            })
+        }
+        if (customer.deletedCount > 0) {
+            CarModel.deleteMany({owner: {$in: _id}}, (err, car) => {
+                if (err) {
+                    return res.status(200).json({
+                        err_code: 1,
+                        message: err.message
+                    })
+                }
+                return res.status(200).json({
+                    err_code: 0,
+                    customer,
+                    car,
+                })
+            })
+        } else {
+            return res.status(200).json({
+                err_code: 1,
+                message: "No such record"
+            })
+        }
+    });
+})
+
+router.get('/test', (req, res) => {
+    let {_id} = req.query
+    console.log(_id)
+    _id = _id.split(",")
+    CarModel.deleteMany({owner: {$in: _id}}, (err, car) => {
+        if (err) {
+            return res.status(200).json({
+                err_code: 1,
+                message: err.message
+            })
+        }
+        return res.status(200).json({
+            err_code: 0,
+            car
+        })
+    })
+})
 module.exports = router;

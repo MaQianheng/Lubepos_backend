@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="02be50e4-2733-4902-929d-5606a30cf39b" name="Default Changelist" comment="" />
+    <list default="true" id="02be50e4-2733-4902-929d-5606a30cf39b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db_models.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/140c579f540c405b854bd00759d4fe09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/24b222eef9fd9e5d8e870e0e9488ec11.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/2b5d159492f91a7cfc720b992332252b.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/304d914520c1c46bba56de210bac7b03.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/352e21ff0f6754c7a64ef543c5142f50.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/39714cb6fcae08eb46d34ef455d5efd2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/3aef53fd1f8d0c203d27435d7da689cc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/3c5ea4515d4067598df877b6e32bbede.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/4cbd66bd05542f206d4a3f9386fe5b1c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/54a3d86791b137d56a7437ecc0e72bde.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/5ddae1d1c7712fff407f36b81f07067d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/5f1edd21f15d2c75bfde7258765a17db.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/717f029382bda6efc14332a0dddf5064.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/727e9b17eb8b8f536196c6b4c35ae193.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/7970ec12a6980f5f5a4cbf4b8f7d55f8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/81f1f2bbebd8baa4dc454d3860447889.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/84e0354d82d5d575631411f037488225.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/884c8330c3da3e307885e2c3ddf491e2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/9b7f057ca5f91dc4afd5edc5c364c2f8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/a0e5b355eac78827586486132fda2c34.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/a1655e23ce4d07b1742b9a7916f3eead.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/a50d7ba0f6a8cd167cff5663378acc9e.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/a5441675e823068252c1390022a342c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/cc2074185ea676300346d094104096d7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/d5352453de0c8930d4a84d5c479cf871.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/da91d938ab27ff84d826cfa6627e31a4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/e9d8a06d8544d74a8f20cd33ad0da5d2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/eb29c1b674d0269d697e5c73c46b38fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fe8ca0dfa22f21e932490a81188d761e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/customers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/customers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/sales.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/sales.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +74,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jAOnKbe6WD2g4xX7QXfBuZvPct" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,37 +101,56 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603243595814</updated>
-      <workItem from="1603243597070" duration="57518000" />
+      <workItem from="1603243597070" duration="76571000" />
+      <workItem from="1603789476174" duration="38658000" />
+      <workItem from="1605613938639" duration="1580000" />
+      <workItem from="1606278894942" duration="202000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="677" y="304" key="#JavaScript" timestamp="1603274958993">
       <screen x="0" y="23" width="1920" height="1131" />
     </state>
     <state x="677" y="304" key="#JavaScript/0.23.1920.1131@0.23.1920.1131" timestamp="1603274958993" />
-    <state x="676" y="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603276769834">
+    <state x="676" y="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604025386986">
       <screen x="0" y="23" width="1920" height="1131" />
     </state>
-    <state x="676" y="397" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1131@0.23.1920.1131" timestamp="1603276769834" />
-    <state width="1899" height="261" key="GridCell.Tab.0.bottom" timestamp="1603550272477">
+    <state x="676" y="397" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1131@0.23.1920.1131" timestamp="1604025386986" />
+    <state width="1899" height="229" key="GridCell.Tab.0.bottom" timestamp="1606035191348">
       <screen x="0" y="23" width="1920" height="1131" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1603550272477" />
-    <state width="1899" height="261" key="GridCell.Tab.0.center" timestamp="1603550272476">
+    <state width="1899" height="229" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1606035191348" />
+    <state width="1899" height="229" key="GridCell.Tab.0.center" timestamp="1606035191347">
       <screen x="0" y="23" width="1920" height="1131" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1603550272476" />
-    <state width="1899" height="261" key="GridCell.Tab.0.left" timestamp="1603550272476">
+    <state width="1899" height="229" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1606035191347" />
+    <state width="1899" height="229" key="GridCell.Tab.0.left" timestamp="1606035191346">
       <screen x="0" y="23" width="1920" height="1131" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1603550272476" />
-    <state width="1899" height="261" key="GridCell.Tab.0.right" timestamp="1603550272477">
+    <state width="1899" height="229" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1606035191346" />
+    <state width="1899" height="229" key="GridCell.Tab.0.right" timestamp="1606035191347">
       <screen x="0" y="23" width="1920" height="1131" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1603550272477" />
+    <state width="1899" height="229" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1606035191347" />
+    <state x="625" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1603883836719">
+      <screen x="0" y="23" width="1920" height="1131" />
+    </state>
+    <state x="625" y="276" width="670" height="676" key="search.everywhere.popup/0.23.1920.1131@0.23.1920.1131" timestamp="1603883836719" />
   </component>
 </project>
