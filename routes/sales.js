@@ -88,7 +88,7 @@ router.get('/insert', async function (req, res, next) {
             })
         }
         // 如果amounts不足，中止本次操作，回传给前端
-        if (item.amount < amount[i]) {
+        if (item.amount < amount[i] && item.type === "products") {
             return res.status(200).json({
                 err_code: 3,
                 message: `${itemsName[i]} has insufficient amounts`
@@ -99,7 +99,10 @@ router.get('/insert', async function (req, res, next) {
                 unitPrice: unitPrice[i],
                 price: price[i]
             }
-            remainingAmount.push(item.amount - amount[i])
+            if (item.type === "products") {
+                item.amount -= amount[i]
+            }
+            remainingAmount.push(item.amount)
         }
     }
 
